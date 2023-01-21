@@ -1,0 +1,15 @@
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+.bgproperty{
+    
+        background-image: url("images/back.jpg");
+        background-size: cover;     
+  }
