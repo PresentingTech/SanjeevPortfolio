@@ -54,7 +54,7 @@ span{
   margin: auto;
 }
 .title{
-  position: absolute  ;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -69,17 +69,4 @@ span{
   font-size: 20px;
   font-style: inherit;
 }
-.about{
-width: 100%;
-padding: 100px 0px;
-background-color: #191919; 
-}
-.about img{
-  height: auto;
-  width: 600px;
-}
-.section{
-  width: 1130px;
-  max-width: 95%;
-  margin: 0 auto;
-}
+
