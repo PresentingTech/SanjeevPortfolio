@@ -10,6 +10,8 @@ header{
   height: 100vh;
   background-size: cover;
   background-position: center;
+  position: -webkit-sticky;
+  position: sticky;
 }
 ul{
   float: right;
@@ -44,6 +46,9 @@ ul li.active a{
   font-size: 30px;
   margin-top: 25px;
 }
+span{
+  color: #ff0000;
+}
 .main{
   max-width: 1200px;
   margin: auto;
@@ -64,3 +69,4 @@ ul li.active a{
   font-size: 20px;
   font-style: inherit;
 }
+
