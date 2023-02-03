@@ -6,3 +6,6 @@ This is a website.
 
 Copy the URL
 Open terminal cansole and type git clone URL
+Use VS Code To work on this project
+Use Live server extention 
+

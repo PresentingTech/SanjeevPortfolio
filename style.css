@@ -3,14 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 header{
   background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/back.jpg);
   height: 100vh;
   background-size: cover;
   background-position: center;
-  position: -webkit-sticky;
   position: sticky;
 }
 ul{
@@ -69,4 +67,28 @@ span{
   font-size: 20px;
   font-style: inherit;
 }
+
+#about {
+  height: 100vh;
+  background-color: #c7c7c7;
+}
+
+#services {
+  height: 100vh;
+  background-color: #855353;
+}
+#portfolio {
+  height: 100vh;
+  background-color: #70b79c;
+}
+#contact {
+  height: 100vh;
+  background-color: #469b3e;
+}
+#footer {
+  height: 30;
+  background-color: rgb(205, 141, 141);
+}
+
+
 
