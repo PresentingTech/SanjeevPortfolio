@@ -4,38 +4,60 @@
   padding: 0;
   box-sizing: border-box;
 }
-header{
-  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/back.jpg);
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  position: sticky;
+
+/* body classes*/
+body {
+  display: grid;
+  grid-template-rows: 0px auto auto;
+  background-color: #eee;
 }
-ul{
-  float: right;
-  list-style-type: none;
-  margin-top: 25px;
+
+/* navbar classes */
+.navbar {
+	position: sticky;
+	top:0px;
 }
-ul li{
-  display: inline-block;
+.navbar ul {
+	position: absolute;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	right:0px;
+	top: 8px;
 }
-ul li a{
-  text-decoration: none;
-  color: #fff;
-  padding: 5px 20px;
-  border: 1px solid transparent;
-  transition: 0.6s ease;
-}
-ul li a:hover{
-  background-color: #fff;
-  color: #111;
-}
-ul li.active a{
-  background-color: #fff;
-  color: #111;
-}
-.logo {
+.navbar li {
   float: left;
+}
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar li a:hover {
+  background-color: #111;
+}
+
+.activelink {
+  background-color: #4CAF50;
+}
+
+/* mainbody classes*/
+.mainbody
+{
+	display: grid;
+	grid-template-rows: auto auto auto auto auto;
+	background-color: #ccc;
+}
+
+/* Homee classes*/
+.logo {
+  position: absolute;
+	top: 8px;
+	left: 16px;
 }
 .logo p{
   text-decoration: none;
@@ -68,131 +90,144 @@ span{
   font-style: inherit;
 }
 
-#about {
-  height: 100vh;
-  background-color: #c7c7c7;
+/* about classes*/
+	
+.about
+{
+	background-color: rgb(255, 255, 255);
 }
 
-#services {
-  height: 100vh;
-  background-color: #855353;
-}
-#portfolio {
-  height: 100vh;
-  background-color: #70b79c;
-}
-#contact {
-  height: 100vh;
-  background-color: #469b3e;
-}
-#footer {
-  height: 30;
-  background-color: rgb(205, 141, 141);
-}
-
-.aboutMe {
-    padding-top: 64px;
-    margin-top: 64px;
-    /*
-    width: 1745.330px;
-    height: 539.594px;
-    */
-}
 .heading {
-    text-align: center;
-    font-size: 38.4px;
-    width: 1296px;
-    height: 48px;
-    font-family: "Segoe UI";
-    margin-bottom: 8px;
+  text-align: center;
+  font-size: 38.4px;
+  width: 1296px;
+  height: 48px;
+  font-family: "Segoe UI";
+  margin-bottom: 8px;
 }
 .container {
-    width: 1296px;
-    height: 491.594px;
-    padding-right: 12px;
-    padding-left: 12px;
-    padding-top: 24px;
-    margin-right: 212.667px;
-    margin-left: 212.667px;
-    margin-top: 24px;
-    column-count: 2;
-    
+  width: 1296px;
+  height: 491.594px;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 24px;
+  margin-right: 212.667px;
+  margin-left: 212.667px;
+  margin-top: 24px;
+  column-count: 2;
+  
 }
 .desc {
-    width: 1320px;
-    height: 419.594px;
-    margin-right: -12px;
-    margin-left: -12px;
-    margin-top: 24px;
+  width: 1320px;
+  height: 419.594px;
+  margin-right: -12px;
+  margin-left: -12px;
+  margin-top: 24px;
 }
 .desc-left {
-    /*width: 296px;
-    height: 424px;*/
-    padding-left: 12px;
-    padding-top: 12px;
+  /*width: 296px;
+  height: 424px;*/
+  padding-left: 12px;
+  padding-top: 12px;
 }
 .desc-right {
-    
-    width: 856px;
-    height: 419.594px;
-    padding-left: 12px;
-    padding-top: 12px;
-    
+  
+  width: 856px;
+  height: 419.594px;
+  padding-left: 12px;
+  padding-top: 12px;
+  
 }
 
 .para1 {
-    
-    font-family: "Segoe UI";
-    font-size: 16px;
-    width: 856px;
-    height: 72px;
-    margin-bottom: 16px;
+  
+  font-family: "Segoe UI";
+  font-size: 16px;
+  width: 856px;
+  height: 72px;
+  margin-bottom: 16px;
 }
 .row1 {
-    width: 880px;
-    height: 88px;
-    margin-left: -12px;
-    margin-right: -12px;
-    margin-top: 16px;
-    font-family: "Segoe UI";
-    font-size: 16px;
+  width: 880px;
+  height: 88px;
+  margin-left: -12px;
+  margin-right: -12px;
+  margin-top: 16px;
+  font-family: "Segoe UI";
+  font-size: 16px;
 }
 .col-md-6 {
-    /*flex: 0 0 auto;
-    width: 50%;*/
-    width: 416px;
-    height: 88px;
-    padding-right: 12px;
-    padding-left: 12px;
-    column-count: 2;
+  /*flex: 0 0 auto;
+  width: 50%;*/
+  width: 416px;
+  height: 88px;
+  padding-right: 12px;
+  padding-left: 12px;
+  column-count: 2;
 }
 .ul {
-    margin-bottom: 1rem;
-    padding-left: 2rem;
-    box-sizing: border-box;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  box-sizing: border-box;
 }
 .list {
-    font-family: "Segoe UI";
-    font-size: 16px;
-    width: 384px;
-    height: 72px;
-    padding-left: 32px;
-    margin-bottom: 16px;
+  font-family: "Segoe UI";
+  font-size: 16px;
+  width: 384px;
+  height: 72px;
+  padding-left: 32px;
+  margin-bottom: 16px;
 }
 .row2 {
-    width: 880px;
-    height: 136px;
-    margin-top: 16px;
-    padding-left: -12px;
-    padding-right: -12px;
+  width: 880px;
+  height: 136px;
+  margin-top: 16px;
+  padding-left: -12px;
+  padding-right: -12px;
 }
 .para2 {
-    
-    font-family: "Segoe UI";
-    font-size: 16px;
-    width: 856px;
-    height: 120px;
-    margin-bottom: 16px;
-    padding-left: 12px;
-    padding-right: 12px;
+  
+  font-family: "Segoe UI";
+  font-size: 16px;
+  width: 856px;
+  height: 120px;
+  margin-bottom: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+
+	
+/* services classes*/
+	
+.services
+{
+  height: 100vh;
+	background-color: rgb(102, 156, 255);
+}
+	
+/* portfolio classes*/
+	
+.portfolio
+{
+  height: 100vh;
+	background-color: rgb(255, 224, 85);
+}
+	
+/* contacts classes*/
+	
+.contacts
+{
+  height: 100vh;
+	background-color: rgb(255, 68, 227);
+}
+
+
+/* footer classes*/
+	
+.footer
+{
+	background-color: rgb(187, 187, 187);
+	text-align: center;
+	color: blue;
 }
