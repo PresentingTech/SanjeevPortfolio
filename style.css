@@ -4,38 +4,60 @@
   padding: 0;
   box-sizing: border-box;
 }
-header{
-  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/back.jpg);
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  position: sticky;
+
+/* body classes*/
+body {
+  display: grid;
+  grid-template-rows: 0px auto auto;
+  background-color: #eee;
 }
-ul{
-  float: right;
-  list-style-type: none;
-  margin-top: 25px;
+
+/* navbar classes */
+.navbar {
+	position: sticky;
+	top:0px;
 }
-ul li{
-  display: inline-block;
+.navbar ul {
+	position: absolute;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	right:0px;
+	top: 8px;
 }
-ul li a{
-  text-decoration: none;
-  color: #fff;
-  padding: 5px 20px;
-  border: 1px solid transparent;
-  transition: 0.6s ease;
-}
-ul li a:hover{
-  background-color: #fff;
-  color: #111;
-}
-ul li.active a{
-  background-color: #fff;
-  color: #111;
-}
-.logo {
+.navbar li {
   float: left;
+}
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar li a:hover {
+  background-color: #111;
+}
+
+.activelink {
+  background-color: #4CAF50;
+}
+
+/* mainbody classes*/
+.mainbody
+{
+	display: grid;
+	grid-template-rows: auto auto auto auto auto;
+	background-color: #ccc;
+}
+
+/* Homee classes*/
+.logo {
+  position: absolute;
+	top: 8px;
+	left: 16px;
 }
 .logo p{
   text-decoration: none;
@@ -68,27 +90,44 @@ span{
   font-style: inherit;
 }
 
-#about {
+/* about classes*/
+	
+.about
+{
+	height: 100vh;
+	background-color: rgb(119, 255, 180);
+}
+	
+/* services classes*/
+	
+.services
+{
   height: 100vh;
-  background-color: #c7c7c7;
+	background-color: rgb(102, 156, 255);
+}
+	
+/* portfolio classes*/
+	
+.portfolio
+{
+  height: 100vh;
+	background-color: rgb(255, 224, 85);
+}
+	
+/* contacts classes*/
+	
+.contacts
+{
+  height: 100vh;
+	background-color: rgb(255, 68, 227);
 }
 
-#services {
-  height: 100vh;
-  background-color: #855353;
-}
-#portfolio {
-  height: 100vh;
-  background-color: #70b79c;
-}
-#contact {
-  height: 100vh;
-  background-color: #469b3e;
-}
-#footer {
-  height: 30;
-  background-color: rgb(205, 141, 141);
-}
 
-
-
+/* footer classes*/
+	
+.footer
+{
+	background-color: rgb(187, 187, 187);
+	text-align: center;
+	color: blue;
+}
