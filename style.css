@@ -219,6 +219,31 @@ span{
 .contacts
 {
   height: 100vh;
+	height: 100vh;
+	background-color: rgb(119, 255, 180);
+}
+	
+/* services classes*/
+	
+.services
+{
+  height: 100vh;
+	background-color: rgb(102, 156, 255);
+}
+	
+/* portfolio classes*/
+	
+.portfolio
+{
+  height: 100vh;
+	background-color: rgb(255, 224, 85);
+}
+	
+/* contacts classes*/
+	
+.contacts
+{
+  height: 100vh;
 	background-color: rgb(255, 68, 227);
 }
 
