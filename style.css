@@ -97,44 +97,36 @@ span{
 	background-color: rgb(255, 255, 255);
 }
 
-.heading {
+.aboutheading {
   text-align: center;
   font-size: 38.4px;
-  width: 1296px;
+  width: auto;
   height: 48px;
   font-family: "Segoe UI";
   margin-bottom: 8px;
 }
-.container {
-  width: 1296px;
+
+.desccontainer {
+  width: auto;
   height: 491.594px;
   padding-right: 12px;
   padding-left: 12px;
   padding-top: 24px;
-  margin-right: 212.667px;
-  margin-left: 212.667px;
   margin-top: 24px;
-  column-count: 2;
-  
+  display: grid;
+  grid-template-columns: auto auto;
 }
-.desc {
-  width: 1320px;
-  height: 419.594px;
-  margin-right: -12px;
-  margin-left: -12px;
-  margin-top: 24px;
-}
+
 .desc-left {
-  /*width: 296px;
-  height: 424px;*/
   padding-left: 12px;
   padding-top: 12px;
 }
 .desc-right {
   
-  width: 856px;
+  width: auto;
   height: 419.594px;
-  padding-left: 12px;
+  padding-left: 50px;
+  padding-right: 50px;
   padding-top: 12px;
   
 }
@@ -143,12 +135,11 @@ span{
   
   font-family: "Segoe UI";
   font-size: 16px;
-  width: 856px;
   height: 72px;
   margin-bottom: 16px;
 }
+
 .row1 {
-  width: 880px;
   height: 88px;
   margin-left: -12px;
   margin-right: -12px;
@@ -156,6 +147,7 @@ span{
   font-family: "Segoe UI";
   font-size: 16px;
 }
+
 .col-md-6 {
   /*flex: 0 0 auto;
   width: 50%;*/
@@ -165,31 +157,17 @@ span{
   padding-left: 12px;
   column-count: 2;
 }
-.ul {
+
+.col-md-6 .list {
   margin-bottom: 1rem;
   padding-left: 2rem;
   box-sizing: border-box;
 }
-.list {
-  font-family: "Segoe UI";
-  font-size: 16px;
-  width: 384px;
-  height: 72px;
-  padding-left: 32px;
-  margin-bottom: 16px;
-}
-.row2 {
-  width: 880px;
-  height: 136px;
-  margin-top: 16px;
-  padding-left: -12px;
-  padding-right: -12px;
-}
+
 .para2 {
   
   font-family: "Segoe UI";
   font-size: 16px;
-  width: 856px;
   height: 120px;
   margin-bottom: 16px;
   padding-left: 12px;
@@ -202,7 +180,7 @@ span{
 	
 .services
 {
-  height: 100vh;
+	height: 100vh;
 	background-color: rgb(102, 156, 255);
 }
 	
@@ -210,7 +188,7 @@ span{
 	
 .portfolio
 {
-  height: 100vh;
+	height: 100vh;
 	background-color: rgb(255, 224, 85);
 }
 	
@@ -218,41 +196,23 @@ span{
 	
 .contacts
 {
-  height: 100vh;
 	height: 100vh;
 	background-color: rgb(119, 255, 180);
 }
 	
-/* services classes*/
 	
-.services
-{
-  height: 100vh;
-	background-color: rgb(102, 156, 255);
-}
-	
-/* portfolio classes*/
-	
-.portfolio
-{
-  height: 100vh;
-	background-color: rgb(255, 224, 85);
-}
-	
-/* contacts classes*/
-	
-.contacts
-{
-  height: 100vh;
-	background-color: rgb(255, 68, 227);
-}
-
 
 /* footer classes*/
 	
 .footer
 {
-	background-color: rgb(187, 187, 187);
+	background-color: rgb(255, 187, 187);
 	text-align: center;
-	color: blue;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+
+.footer h1 {
+	color: white;
+	text-shadow: 1px 1px 2px black, 0 0 15px blue, 0 0 5px darkblue;
 }
