@@ -181,9 +181,31 @@ span{
 .services
 {
 	height: 100vh;
-	background-color: rgb(102, 156, 255);
+	background-color: #fff;
+  padding: 30px 0;
 }
-	
+.row{
+  width: auto;
+  padding-right: 200px;
+  padding-left: 200px;
+  padding-top: 24px;
+  margin-top: 24px;
+  border-style:inherit;
+  
+}
+.services_list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  
+}
+.services_list h2{
+  line-height: 2;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: x-large;
+}
+
 /* portfolio classes*/
 	
 .portfolio
