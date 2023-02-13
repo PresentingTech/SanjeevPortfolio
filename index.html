@@ -45,7 +45,7 @@
     <!-- about -->
 
     <section class="about" id="about">
-      <h1 class="aboutheading">About Me</h1>
+      <h1 class="allHeading">About Me</h1>
       <div class="desccontainer">
               <div class="desc-left">
                   <img src="images/about.jpg" alt="" width="416" height="419.594">
@@ -117,11 +117,25 @@
     <!-- contacts -->
 
     <section class="contacts" id="contact">
-      <h1>contacts page</h1>
-      <h1>contacts page</h1>
-      <h1>contacts page</h1>
-      <h1>contacts page</h1>
+      <h1 class="allHeading">Contact Me</h1>
+      <div class="contactColumn">
+        <div style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;"><div id="my-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Indian+Institute+Of+Technology–Roorkee+(IIT–Roorkee),+Roorkee,+Uttarakhand,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="embed-map-html" href="https://www.bootstrapskins.com/themes" id="auth-map-data">premium bootstrap themes</a><style>#my-map-display img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style></div>
+      </div>
+      <div class="contactColumn">
+        <!--Form Fields-->
+        <form action="">
+          <input type="text" id="name" name="name" placeholder="Name"><br>
+      
+          <input type="email" id="email" name="email" placeholder="Email"><br>
+      
+          <input type="text" id="subject" name="Subject" placeholder="Subject"><br>
 
+          <textarea class="textArea" rows="4" id="projectDetails" name="Project Details" placeholder="Project Details"></textarea><br><br>
+
+        </form>
+        
+        <button type="button" class="buttonStyle">Contact Me</button>
+      </div>
     </section>
 
   </mainbody>
