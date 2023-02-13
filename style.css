@@ -241,20 +241,27 @@ span{
 .grid
  {
   display: grid;
-  grid-template-columns: repeat(3,180px);  /* 3 columns */
-  grid-template-rows: repeat(3,200px); /* 3 rows  */
-  grid-gap:80px 300px; /* 50 pixels of space added between rows and 30 pixels added between columns  */
-  padding-left: 32px;
-  padding-right: px;
+  grid-template-columns: repeat(3,1fr);  /* 3 columns */
+  grid-template-rows: repeat(3,1fr); /* 3 rows  */
+  grid-gap:50px 50px; /* 50 pixels of space added between rows and 30 pixels added between columns  */
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .grid-item{
-  border:thin gray solid;
+  border:thin rgb(206, 206, 206) solid;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }	
 .LinkButton{
   font-family: "Segoe UI";
-  font-size: 16px;
+  font-size: 20px;
   background-color: #198754;
   color: #fff;
+  text-align: center;
 }
 /* contacts classes*/
 	
