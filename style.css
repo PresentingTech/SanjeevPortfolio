@@ -38,12 +38,26 @@ body {
   text-decoration: none;
 }
 .navbar li a:hover {
-  background-color: #111;
+  background-color: rgb(45, 42, 42);
 }
 
 .activelink {
   background-color: #4CAF50;
 }
+
+a:link, a:visited {
+  background-color: #4c4c4c;
+  color: white;
+  padding: 3px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: rgb(154, 154, 154);
+}
+
 
 /* mainbody classes*/
 .mainbody
@@ -211,9 +225,39 @@ span{
 	
 .portfolio
 {
-	height: 100vh;
-	background-color: rgb(255, 224, 85);
+	height: 150vh;
+	background-color: rgb(255, 255, 255);
 }
+
+.grid
+ {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);  /* 3 columns */
+  grid-template-rows: repeat(3,1fr); /* 3 rows  */
+  grid-gap:50px 50px; /* 50 pixels of space added between rows and 30 pixels added between columns  */
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+.grid-item{
+  border:thin rgb(206, 206, 206) solid;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}	
+.LinkButton{
+  font-family: "Segoe UI";
+  font-size: 20px;
+  background-color: #198754;
+  color: #fff;
+  text-align: center;
+}
+
+
+
+
 	
 /* contacts classes*/
 	
