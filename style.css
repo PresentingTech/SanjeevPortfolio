@@ -38,12 +38,26 @@ body {
   text-decoration: none;
 }
 .navbar li a:hover {
-  background-color: #111;
+  background-color: rgb(45, 42, 42);
 }
 
 .activelink {
   background-color: #4CAF50;
 }
+
+a:link, a:visited {
+  background-color: #4c4c4c;
+  color: white;
+  padding: 3px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: rgb(154, 154, 154);
+}
+
 
 /* mainbody classes*/
 .mainbody
@@ -211,9 +225,66 @@ span{
 	
 .portfolio
 {
-	height: 100vh;
-	background-color: rgb(255, 224, 85);
+	height: 160vh;
+	background-color: rgb(255, 255, 255);
 }
+
+.grid
+ {
+  display: grid;
+  
+
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 450px 450px;
+
+  grid-gap:50px 50px; /* 50 pixels of space added between rows and 30 pixels added between columns  */
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  
+}
+.grid-item{
+  border:thin rgba(206, 206, 206, 0) solid;
+  
+}	
+.LinkButton{
+  font-family: "Segoe UI";
+  font-size: 20px;
+  background-color: #198754;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px 5px 5px 5px;
+  
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.card-subHeading {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Segoe UI";
+  color:#272727
+}
+
+
 	
 /* contacts classes*/
 	
