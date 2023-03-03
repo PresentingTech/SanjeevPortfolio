@@ -1,20 +1,56 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* custom properties */
+
+:root {
+  --body-padding: 0;
+  --body-margin: 0;
+  
+  --navbar-width:auto;
+  --navbar-ul-width:auto;
+  --navbar-li-width:auto;
+  
+  
+  --desc-left-width: 30%;
+
+  --desc-right-width: 60%;
+  --desc-right-padding-left: 70px;
+  
+  --row-padding-left: 200px;
+  --row-padding-right: 200px;
+
+  --services_list-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  --services_list-grid-template-rows: auto;
+
+  --grid-grid-template-columns: 400px 400px 400px;
+  --grid-grid-template-rows: 450px 450px;
+
+  --contactColumn-width: 50%;
+  
+  
+  /* standard parameter */
+  --standard-padding-left: 40px;
+  --standard-padding-right :40px;
+  --standard-padding-top :0px;
+  --standard-main-heading-size :38.4px;
+  --standard-para-heading-size :x-large;
+  --standard-normal-font-size :16px;
 }
+
+
 
 /* body classes*/
 body {
   display: grid;
+  grid-template-columns:auto;
   grid-template-rows: 0px auto auto;
-  background-color: #eee;
+  padding: var(--body-padding);
+  margin: var(--body-margin);
 }
 
 /* navbar classes */
 .navbar {
   position: sticky;
   top: 0px;
+  width: var(--navbar-width);
 }
 
 .navbar ul {
@@ -26,10 +62,12 @@ body {
   background-color: #333;
   right: 0px;
   top: 8px;
+    width: var(--navbar-ul-width);
 }
 
 .navbar li {
   float: left;
+      width: var(--navbar-li-width);
 }
 
 .navbar li a {
@@ -68,7 +106,6 @@ a:active {
 .mainbody {
   display: grid;
   grid-template-rows: auto auto auto auto auto;
-  background-color: #ccc;
 }
 
 /* Homee classes*/
@@ -91,7 +128,7 @@ span {
 }
 
 .main {
-  max-width: 1200px;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -117,12 +154,14 @@ span {
 /* about classes*/
 
 .about {
-  background-color: rgb(255, 255, 255);
+  padding-left: var(--standard-padding-left);
+  padding-right: var(--standard-padding-right);
+  padding-top: var(--standard-padding-top);
 }
 
 .allHeading {
   text-align: center;
-  font-size: 38.4px;
+  font-size: var(--standard-main-heading-size);
   width: auto;
   height: 48px;
   font-family: "Segoe UI";
@@ -133,34 +172,29 @@ span {
 .desccontainer {
   width: auto;
   height: auto;
-  padding-right: 12px;
-  padding-left: 12px;
   padding-top: 24px;
   margin-top: 24px;
-  /* display: grid; */
-  /* grid-template-columns: auto auto; */
 }
 
 .desc-left {
-  padding-left: 12px;
   padding-top: 12px;
-  float: left;
-  width: 30%;
+  float:left;
+  width: var(--desc-left-width);
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .desc-right {
-
-  width: 70%;
-  padding-left: 50px;
-  padding-right: 50px;
+  width: var(--desc-right-width);
   padding-top: 12px;
+  padding-left: var(--desc-right-padding-left);
   float: left;
 }
 
 .para1 {
 
   font-family: "Segoe UI";
-  font-size: 16px;
+  font-size: var(--standard-normal-font-size);
   height: auto;
   margin-bottom: 16px;
 }
@@ -171,13 +205,13 @@ span {
   margin-right: -12px;
   margin-top: 16px;
   font-family: "Segoe UI";
-  font-size: 16px;
+  font-size: var(--standard-normal-font-size);
 }
 
 .col-md-6 {
   /*flex: 0 0 auto;
   width: 50%;*/
-  width: 416px;
+  width: 50%;
   height: 88px;
   padding-right: 12px;
   padding-left: 12px;
@@ -193,7 +227,7 @@ span {
 .para2 {
 
   font-family: "Segoe UI";
-  font-size: 16px;
+  font-size: var(--standard-normal-font-size);
   height: auto;
   margin-bottom: 16px;
   padding-left: 12px;
@@ -212,17 +246,17 @@ span {
 
 .row {
   width: auto;
-  padding-right: 200px;
-  padding-left: 200px;
+  padding-right: var(--row-padding-right);
+  padding-left: var(--row-padding-left);
   padding-top: 24px;
   margin-top: 24px;
   border-style: inherit;
-
 }
 
 .services_list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: var(--services_list-grid-template-columns);
+  grid-template-rows: var(--services_list-grid-template-rows);
   grid-gap: 40px;
   margin-top: 50px;
 }
@@ -248,12 +282,10 @@ span {
 .grid {
   display: grid;
 
-
-  grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 450px 450px;
+  grid-template-columns: var(--grid-grid-template-columns);
+  grid-template-rows: var(--grid-grid-template-rows);
 
   grid-gap: 50px 50px;
-  /* 50 pixels of space added between rows and 30 pixels added between columns  */
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 10px;
@@ -315,7 +347,7 @@ img {
 .contactColumn {
   padding-top: 24px;
   float: left;
-  width: 50%;
+  width: var(--contactColumn-width);
   padding-bottom: 50px;
 }
 
@@ -383,61 +415,26 @@ input[type=email] {
 
 @media only screen and (max-width: 600px) {
 
-
-  /* navbar classes */
-  .navbar {
-
-    width: 100%
-  }
-
-  .navbar ul {
-
-    width: 100%
-  }
-
-  .navbar li {
-    width: 20%;
-  }
-
-
-  /* about classes*/
-  .desc-left {
-
-    width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
-  .desc-right {
-
-    width: 100%;
-  }
-
-
-  /* services classes*/
-
-
-  .row {
-    padding-right: 100px;
-    padding-left: 100px;
-
-  }
-
-  .services_list {
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-  }
-
-  /* portfolio classes*/
-  .grid {
-    grid-template-columns: auto;
-    grid-template-rows: 450px 450px 450px 450px 450px 450px;
-  }
-
-  /* contacts classes*/
-  .contactColumn {
-    width: 100%;
-  }
+   :root {
+		--navbar-width:100%;
+	    --navbar-ul-width:100%;
+		--navbar-li-width:20%;
+		
+		--desc-left-width: 100%;
+		--desc-right-width: 100%;
+		--desc-right-padding-left: 0px;
+		
+		--row-padding-left: 100px;
+		--row-padding-right: 100px;
+		
+		--services_list-grid-template-columns: auto;
+		--services_list-grid-template-rows: auto auto auto;
+		
+		--grid-grid-template-columns: auto;
+		--grid-grid-template-rows: 450px 450px 450px 450px 450px 450px;
+		
+		--contactColumn-width: 100%;
+	}
 
 
 }
