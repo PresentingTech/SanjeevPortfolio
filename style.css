@@ -270,7 +270,7 @@ span {
 
 .grid {
   display: flex;
-  justify-content: initial;
+  justify-content: center;
   flex-wrap: wrap;
   row-gap: 4vw;
 }
@@ -295,8 +295,8 @@ span {
   transition: 0.3s;
   width: 93%;
   height: 100%;
-  margin-right: 20%;
-  margin-left: 20%;
+  margin-right: 5%;
+  margin-left: 5%;
   margin-bottom: 2%;
 }
 
