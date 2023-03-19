@@ -270,7 +270,7 @@ span {
 
 .grid {
   display: flex;
-  justify-content: space-between;
+  justify-content: initial;
   flex-wrap: wrap;
   row-gap: 4vw;
 }
@@ -287,14 +287,17 @@ span {
   color: #fff;
   text-align: center;
   border-radius: 5px 5px 5px 5px;
-
+  margin-left: 40%;
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 100%;
+  width: 93%;
   height: 100%;
+  margin-right: 20%;
+  margin-left: 20%;
+  margin-bottom: 2%;
 }
 
 .card:hover {
@@ -306,16 +309,21 @@ img {
 }
 
 .portfolio-container {
-  padding: 2px 16px;
+  padding: 2px 16px;  
 }
 
 .card-subHeading {
-  text-align: center;
+  text-align: left;
   font-size: 25px;
   font-family: "Segoe UI";
-  color: #272727
+  color: #272727;
+  margin-left: 15px;
 }
 
+.pera_text{
+  margin: auto;    
+  margin-left: 15px;
+}
 
 
 /* contacts classes*/
