@@ -386,11 +386,11 @@ input[type=email] {
 /* footer classes*/
 
 .footer {
-  background-color: #838383;
+  background-color: #d1d1d1;
   text-align: center;
 }
 
-.footer h1 {
+.footer h3 {
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 15px blue, 0 0 5px darkblue;
 }
@@ -399,7 +399,9 @@ input[type=email] {
 .social-wrapper {
   text-align: center;
 }
-
+.social-wrapper ul{
+  padding: 0px;
+}
 .social-wrapper ul li {
   display: inline;
   margin: 0 5px;
