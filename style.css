@@ -88,8 +88,8 @@ body {
   background-color: #4CAF50;
 }
 
-a:link,
-a:visited {
+.navbar li a:link,
+.navbar li a:visited {
   background-color: #4c4c4c;
   color: white;
   padding: 3px 10px;
@@ -98,8 +98,8 @@ a:visited {
   display: inline-block;
 }
 
-a:hover,
-a:active {
+.navbar li a:hover,
+.navbar li a:active {
   background-color: rgb(154, 154, 154);
 }
 
