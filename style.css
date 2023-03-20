@@ -265,8 +265,7 @@ span {
 
 .portfolio {
   height: auto;
-
-}
+ }
 
 .grid {
   display: flex;
@@ -278,19 +277,21 @@ span {
 .grid-item {
   border: thin rgba(206, 206, 206, 0) solid;
   width: var(--grid-item-width);
-}
+  }
 
 .LinkButton {
   font-family: "Segoe UI";
-  font-size: 25px;
+  font-size: 20px;
   background-color: #198754;
   color: #fff;
   text-align: center;
   border-radius: 7px 7px 7px 7px;
-  margin-left: 39%;
+  margin-left: 40%;
+  margin-right: 40%;
   padding: 2px 12px;
-  text-decoration: none;
-  display: inline-block;
+  display:flex;
+  justify-content: center;
+ text-decoration: none;
 }
 
 .card {
@@ -300,6 +301,7 @@ span {
   height: 100%;
   margin-right: 5%;
   margin-bottom: 2%;
+  
 }
 
 .card:hover {
@@ -312,7 +314,7 @@ img {
 
 .portfolio-container {
   padding: 2px 16px;  
-}
+ }
 
 .card-subHeading {
   text-align: left;
@@ -322,7 +324,7 @@ img {
   margin-left: 15px;
 }
 
-.pera_text{
+.card-deteail-text{
   margin: auto;    
   margin-left: 15px;
 }
