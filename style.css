@@ -22,9 +22,9 @@
 
 
   /* standard parameter */
-  --standard-padding-left: 2vw;
-  --standard-padding-right: 2vw;
-  --standard-width: calc(100%-4vw);
+  --standard-padding-left: 10vw;
+  --standard-padding-right: 10vw;
+  --standard-width: calc(100%-20vw);
 
   --standard-main-heading-size: 38.4px;
   --standard-para-heading-size: x-large;
@@ -43,7 +43,7 @@
 body {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 0px auto auto;
+  grid-template-rows: auto auto auto;
   padding: var(--body-padding);
   margin: var(--body-margin);
 }
@@ -53,6 +53,8 @@ body {
   position: sticky;
   top: 0px;
   width: var(--navbar-width);
+  height: auto;
+  z-index: 10;
 }
 
 .navbar ul {
@@ -60,10 +62,10 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  float: right;
   overflow: hidden;
   background-color: #333;
   right: 0px;
-  top: 8px;
   width: var(--navbar-ul-width);
 }
 
@@ -113,9 +115,9 @@ body {
 /* Homee classes*/
 .logo {
   position: absolute;
-  top: 8px;
-  left: 16px;
-  Border-radius: 50%;
+  top: 50px;
+  left: 50px;
+  Border-radius: 30%;
   border-collapse: separate;
   overflow: hidden;
 }
@@ -140,7 +142,7 @@ span {
   width: 100%;
   height: 100vh;
   alt: 'Computer image';
-  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url('images/back.jpg');
+  background-image: linear-gradient(178.1deg, rgba(73, 55, 106, 0.795) 8.5%, rgba(0, 65, 170, 0.47) 82.4%),  url('images/back.jpg');
   background-size: cover;
   color: white;
 }
@@ -442,9 +444,6 @@ input[type=email] {
 @media only screen and (max-width: 600px) {
 
   :root {
-    --navbar-width: 100%;
-    --navbar-ul-width: 100%;
-    --navbar-li-width: 20%;
 
     --desc-left-width: 100%;
     --desc-right-width: 100%;
@@ -456,6 +455,36 @@ input[type=email] {
 
     --contactColumn-width: 100%;
   }
+}
 
+@media only screen and (max-width: 900px) and (min-width: 600px){
 
+  :root {
+    --desc-left-width: 100%;
+    --desc-right-width: 100%;
+    --desc-right-padding-left: 0px;
+
+    --services_list-div-width: 80%;
+    --grid-item-width: 80%;
+    --contactColumn-width: 80%;
+    
+  }
+
+  .services_list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 4vw;
+    justify-content: space-around;
+}
+  .grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 4vw;
+  }
+  .contacts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 }
