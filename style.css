@@ -183,6 +183,7 @@ span {
 .desc-left {
   float: left;
   width: var(--desc-left-width);
+  padding-top: 8%;
 }
 
 .desc-right {
@@ -200,20 +201,18 @@ span {
 }
 
 .row1 {
-  height: 88px;
-  margin-top: 16px;
+  
   font-family: "Segoe UI";
   font-size: var(--standard-normal-font-size);
 }
 
 .col-md-6 {
-  width: 100%;
-  height: auto;
-  column-count: 2;
+  display: flex;
 }
 
+
 .col-md-6 .list {
-  box-sizing: border-box;
+  flex: 50%;
 }
 
 .para2 {
