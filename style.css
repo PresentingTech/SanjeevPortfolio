@@ -46,6 +46,8 @@ body {
   grid-template-rows: auto auto auto;
   padding: var(--body-padding);
   margin: var(--body-margin);
+  font-size: var(--standard-normal-font-size);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* navbar classes */
@@ -169,7 +171,6 @@ span {
   text-align: center;
   font-size: var(--standard-main-heading-size);
   width: auto;
-  font-family: "Segoe UI";
   color: #464545
 }
 
@@ -193,7 +194,6 @@ span {
 
 .para1 {
 
-  font-family: "Segoe UI";
   font-size: var(--standard-normal-font-size);
   height: auto;
   margin-bottom: 16px;
@@ -202,7 +202,6 @@ span {
 .row1 {
   height: 88px;
   margin-top: 16px;
-  font-family: "Segoe UI";
   font-size: var(--standard-normal-font-size);
 }
 
@@ -218,7 +217,6 @@ span {
 
 .para2 {
 
-  font-family: "Segoe UI";
   font-size: var(--standard-normal-font-size);
   height: auto;
 }
@@ -252,13 +250,11 @@ span {
 
 .services_list h2 {
   line-height: 2;
-  font-family: 'Segoe UI';
   font-size: x-large;
   text-align: center;
 }
 
 .services_list p {
-  font-family: 'Segoe UI';
   text-align: justify;
   text-justify: inter-word;
 }
@@ -282,7 +278,6 @@ span {
   }
 
 .linkButton {
-  font-family: "Segoe UI";
   font-size: 20px;
   background-color: #198754;
   color: #fff;
@@ -321,7 +316,6 @@ img {
 .card-subHeading {
   text-align: left;
   font-size: 25px;
-  font-family: "Segoe UI";
   color: #272727;
 }
 
@@ -350,7 +344,6 @@ input[type=text] {
   margin: 8px 0;
   border: 2.2px solid #cac9c9;
   border-radius: 5px;
-  font-family: "Segoe UI";
   font-size: 16px;
   box-sizing: border-box;
 }
@@ -363,8 +356,7 @@ input[type=email] {
   border-radius: 4px;
   box-sizing: border-box;
   font-size: 16px;
-  font-family: "Segoe UI";
-}
+  }
 
 .textArea {
   width: 100%;
@@ -374,8 +366,7 @@ input[type=email] {
   padding: 15px 12px;
   margin: 8px 0;
   font-size: 16px;
-  font-family: "Segoe UI";
-}
+  }
 
 .buttonStyle {
   background-color: #198754;
@@ -387,8 +378,7 @@ input[type=email] {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  font-family: "Segoe UI";
-}
+  }
 
 /* footer classes*/
 
