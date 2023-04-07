@@ -47,7 +47,7 @@ body {
   padding: var(--body-padding);
   margin: var(--body-margin);
   font-size: var(--standard-normal-font-size);
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"  ;
 }
 
 /* navbar classes */
