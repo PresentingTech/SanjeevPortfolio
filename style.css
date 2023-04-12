@@ -183,23 +183,23 @@ span {
 .desc-left {
   float: left;
   width: var(--desc-left-width);
-  padding-top: 8%;
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
 }
 
 .desc-right {
   width: var(--desc-right-width);
   padding-left: var(--desc-right-padding-left);
   float: left;
+
 }
 
-.para1 {
-
+.para {
   font-family: "Segoe UI";
   font-size: var(--standard-normal-font-size);
   height: auto;
-  margin-bottom: 16px;
 }
-
 .row1 {
   
   font-family: "Segoe UI";
@@ -213,13 +213,6 @@ span {
 
 .col-md-6 .list {
   flex: 50%;
-}
-
-.para2 {
-
-  font-family: "Segoe UI";
-  font-size: var(--standard-normal-font-size);
-  height: auto;
 }
 
 
