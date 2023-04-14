@@ -183,44 +183,36 @@ span {
 .desc-left {
   float: left;
   width: var(--desc-left-width);
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
 }
 
 .desc-right {
   width: var(--desc-right-width);
   padding-left: var(--desc-right-padding-left);
   float: left;
+
 }
 
-.para1 {
-
+.para {
   font-family: "Segoe UI";
   font-size: var(--standard-normal-font-size);
   height: auto;
-  margin-bottom: 16px;
 }
-
 .row1 {
-  height: 88px;
-  margin-top: 16px;
+  
   font-family: "Segoe UI";
   font-size: var(--standard-normal-font-size);
 }
 
 .col-md-6 {
-  width: 100%;
-  height: auto;
-  column-count: 2;
+  display: flex;
 }
+
 
 .col-md-6 .list {
-  box-sizing: border-box;
-}
-
-.para2 {
-
-  font-family: "Segoe UI";
-  font-size: var(--standard-normal-font-size);
-  height: auto;
+  flex: 50%;
 }
 
 
