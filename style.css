@@ -151,7 +151,7 @@ span {
 
 .title h1 {
   color: #fff;
-  font-size: 50px;
+  font-size: 100px;
   font-style: italic;
 }
 
@@ -250,7 +250,6 @@ span {
 
 .services_list h2 {
   line-height: 2;
-  font-size: x-large;
   text-align: center;
 }
 
@@ -344,7 +343,7 @@ input[type=text] {
   margin: 8px 0;
   border: 2.2px solid #cac9c9;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: var(--standard-normal-font-size);
   box-sizing: border-box;
 }
 
@@ -355,7 +354,7 @@ input[type=email] {
   border: 2.2px solid #cac9c9;
   border-radius: 4px;
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: var(--standard-normal-font-size);
   }
 
 .textArea {
@@ -365,7 +364,7 @@ input[type=email] {
   box-sizing: border-box;
   padding: 15px 12px;
   margin: 8px 0;
-  font-size: 16px;
+  font-size: var(--standard-normal-font-size);
   }
 
 .buttonStyle {
@@ -377,7 +376,7 @@ input[type=email] {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: var(--standard-normal-font-size);
   }
 
 /* footer classes*/
