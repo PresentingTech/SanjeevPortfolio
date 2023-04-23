@@ -43,7 +43,7 @@
 body {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto;
   padding: var(--body-padding);
   margin: var(--body-margin);
   font-size: var(--standard-normal-font-size);
@@ -52,7 +52,7 @@ body {
 
 /* navbar classes */
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0px;
   width: var(--navbar-width);
   height: auto;
@@ -60,14 +60,14 @@ body {
 }
 
 .navbar ul {
-  position: absolute;
+  position: fixed;
   list-style-type: none;
   margin: 0;
   padding: 0;
   float: right;
   overflow: hidden;
   background-color: #333;
-  right: 0px;
+  right: var(--standard-padding-right);
   width: var(--navbar-ul-width);
 }
 
@@ -435,6 +435,8 @@ input[type=email] {
     --grid-item-width: 100%;
 
     --contactColumn-width: 100%;
+    --standard-padding-left: 5vw;
+    --standard-padding-right: 5vw;
   }
 }
 
