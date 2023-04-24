@@ -66,8 +66,8 @@ body {
 	float:right;
 	margin-left: var(--standard-padding-left);
 	margin-right: var(--standard-padding-right);
-	padding-bottom:5px;
-	padding-top:5px;
+	padding-bottom:10px;
+	padding-top:10px;
 
 }
 
