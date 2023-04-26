@@ -54,56 +54,59 @@ body {
 .navbar {
   position: fixed;
   top: 0px;
-  width: var(--navbar-width);
+  width: 100%;
   height: auto;
   z-index: 10;
+	background-color:transparent;
 }
 
-.navbar ul {
-  position: fixed;
-  list-style-type: none;
+.navbar .nav-item-cointainer{
+	display:flex;
+    justify-content: space-around;
+	float:right;
+	margin-left: var(--standard-padding-left);
+	margin-right: var(--standard-padding-right);
+	padding-bottom:10px;
+	padding-top:10px;
+
+}
+
+.navbar div div {
   margin: 0;
   padding: 0;
-  float: right;
-  overflow: hidden;
-  background-color: #333;
-  right: var(--standard-padding-right);
-  width: var(--navbar-ul-width);
+  width: auto;
 }
 
-.navbar li {
+/* .navbar di {
   float: left;
   width: var(--navbar-li-width);
-}
+} */
 
 .navbar li a {
-  display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-.navbar li a:hover {
+.navbar div div a:hover {
   background-color: rgb(45, 42, 42);
 }
 
 .activelink {
-  background-color: #4CAF50;
+  /* background-color: #4CAF50; */
 }
 
-.navbar li a:link,
-.navbar li a:visited {
-  background-color: #4c4c4c;
+.navbar div div a:link,
+.navbar div div a:visited {
   color: white;
   padding: 3px 10px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
 }
 
-.navbar li a:hover,
-.navbar li a:active {
+.navbar div div a:hover,
+.navbar div div a:active {
   background-color: rgb(154, 154, 154);
 }
 
@@ -122,10 +125,6 @@ body {
   Border-radius: 30%;
   border-collapse: separate;
   overflow: hidden;
-}
-
-span {
-  color: #ff0000;
 }
 
 .main {
@@ -151,7 +150,7 @@ span {
 
 .title h1 {
   color: #fff;
-  font-size: 100px;
+  font-size: 60px;
   font-style: italic;
 }
 
