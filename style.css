@@ -120,9 +120,9 @@ body {
 /* Homee classes*/
 .logo {
   position: absolute;
-  top: 50px;
-  left: 50px;
-  Border-radius: 30%;
+  top: 10px;
+  left: 10px;
+  Border-radius: 100%;
   border-collapse: separate;
   overflow: hidden;
 }
