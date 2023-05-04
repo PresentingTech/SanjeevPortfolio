@@ -93,10 +93,6 @@ body {
   background-color: rgb(45, 42, 42);
 }
 
-.activelink {
-  /* background-color: #4CAF50; */
-}
-
 .navbar div div a:link,
 .navbar div div a:visited {
   color: white;
@@ -117,6 +113,7 @@ body {
   grid-template-rows: auto auto auto auto auto;
 }
 
+
 /* Homee classes*/
 .logo {
   position: absolute;
@@ -126,6 +123,7 @@ body {
   border-collapse: separate;
   overflow: hidden;
 }
+
 
 .main {
   max-width: 100%;
