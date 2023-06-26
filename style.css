@@ -47,7 +47,7 @@ body {
   padding: var(--body-padding);
   margin: var(--body-margin);
   font-size: var(--standard-normal-font-size);
-  font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"  ;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 /* navbar classes */
@@ -57,17 +57,17 @@ body {
   width: 100%;
   height: auto;
   z-index: 10;
-	background-color:transparent;
+  background-color: transparent;
 }
 
-.navbar .nav-item-cointainer{
-	display:flex;
-    justify-content: space-around;
-	float:right;
-	margin-left: var(--standard-padding-left);
-	margin-right: var(--standard-padding-right);
-	padding-bottom:10px;
-	padding-top:10px;
+.navbar .nav-item-cointainer {
+  display: flex;
+  justify-content: space-around;
+  float: right;
+  margin-left: var(--standard-padding-left);
+  margin-right: var(--standard-padding-right);
+  padding-bottom: 10px;
+  padding-top: 10px;
 
 }
 
@@ -125,17 +125,17 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.title a{
+.title a {
 
- color: red;
- 
+  color: red;
+
 }
 
 .home {
   width: 100%;
   height: 100vh;
   alt: 'Computer image';
-  background-image: linear-gradient(178.1deg, rgba(73, 55, 106, 0.795) 8.5%, rgba(0, 65, 170, 0.47) 82.4%),  url('images/back.jpg');
+  background-image: linear-gradient(178.1deg, rgba(73, 55, 106, 0.795) 8.5%, rgba(0, 65, 170, 0.47) 82.4%), url('images/back.jpg');
   background-size: cover;
   color: white;
 }
@@ -186,6 +186,7 @@ body {
   float: left;
 
 }
+
 .para {
   font-size: var(--standard-normal-font-size);
   height: auto;
@@ -239,13 +240,14 @@ body {
 .services_list p {
   text-align: left;
   text-justify: inter-word;
+
 }
 
 /* portfolio classes*/
 
 .portfolio {
   height: auto;
- }
+}
 
 .grid {
   display: flex;
@@ -257,7 +259,7 @@ body {
 .grid-item {
   border: thin rgba(206, 206, 206, 0) solid;
   width: var(--grid-item-width);
-  }
+}
 
 .linkButton {
   font-size: 20px;
@@ -269,7 +271,7 @@ body {
   text-decoration: none;
 }
 
-.linkButton_parent{
+.linkButton_parent {
   display: flex;
   justify-content: space-around;
 }
@@ -279,7 +281,7 @@ body {
   transition: 0.3s;
   width: 100%;
   height: 100%;
-  margin-bottom: 2%;  
+  margin-bottom: 2%;
 }
 
 .card:hover {
@@ -291,9 +293,9 @@ img {
 }
 
 .portfolio-container {
-  padding: 2px 16px;  
-  
- }
+  padding: 2px 16px;
+
+}
 
 .card-subHeading {
   text-align: left;
@@ -338,7 +340,7 @@ input[type=email] {
   border-radius: 4px;
   box-sizing: border-box;
   font-size: var(--standard-normal-font-size);
-  }
+}
 
 .textArea {
   width: 100%;
@@ -348,7 +350,7 @@ input[type=email] {
   padding: 15px 12px;
   margin: 8px 0;
   font-size: var(--standard-normal-font-size);
-  }
+}
 
 .buttonStyle {
   background-color: #198754;
@@ -360,7 +362,7 @@ input[type=email] {
   text-decoration: none;
   display: inline-block;
   font-size: var(--standard-normal-font-size);
-  }
+}
 
 /* footer classes*/
 
@@ -378,9 +380,11 @@ input[type=email] {
 .social-wrapper {
   text-align: center;
 }
-.social-wrapper ul{
+
+.social-wrapper ul {
   padding: 0px;
 }
+
 .social-wrapper ul li {
   display: inline;
   margin: 0 5px;
@@ -431,7 +435,7 @@ input[type=email] {
   }
 }
 
-@media only screen and (max-width: 900px) and (min-width: 600px){
+@media only screen and (max-width: 900px) and (min-width: 600px) {
 
   :root {
     --desc-left-width: 100%;
@@ -441,7 +445,7 @@ input[type=email] {
     --services_list-div-width: 80%;
     --grid-item-width: 80%;
     --contactColumn-width: 80%;
-    
+
   }
 
   .services_list {
@@ -449,16 +453,18 @@ input[type=email] {
     flex-wrap: wrap;
     row-gap: 4vw;
     justify-content: space-around;
-}
+  }
+
   .grid {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     row-gap: 4vw;
   }
+
   .contacts-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
+  }
 }
